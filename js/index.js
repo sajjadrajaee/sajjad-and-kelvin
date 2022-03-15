@@ -1,4 +1,14 @@
 // !! IMPORTANT README:
+var aboveHeight = $('header').outerHeight();
+$(window).scroll(function () {
+  if ($(window).scrollTop() > aboveHeight) {
+    $('.MainMenu').css('position', 'fixed');
+  }
+  else {
+    $('.MainMenu').css('position', 'static');
+  }
+}
+);
 
 // You may add additional external JS and CSS as needed to complete the project, however the current external resource MUST remain in place for the tests to work. BABEL must also be left in place. 
 
